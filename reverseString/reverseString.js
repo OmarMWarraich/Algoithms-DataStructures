@@ -45,11 +45,9 @@ function reverseString(str){
 
 // Method 5 - Using the reduce method
 
-/*
 function reverseString(str){
     return str.split("").reduce((revString, char) => char + revString, "")
 }
-*/
 
 // Method 6 - Using the spread operator
 /*
@@ -66,7 +64,7 @@ function reverseString(str){
 
 // Method 8 - Using a stack
 
-function reverseString(str){
+/* function reverseString(str){
     var stack = []
     for(var i = 0; i < str.length; i++){
         stack.push(str[i])
@@ -76,4 +74,4 @@ function reverseString(str){
         reverseStr += stack.pop()
     }
     return reverseStr
-}
+} */
