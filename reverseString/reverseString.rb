@@ -1,9 +1,9 @@
 # Create a function that reverses a string
 
 # Soultion 1 - Using Ruby's built in reverse method
-#def reverseString(str)
-#    str.reverse
-#    end
+def reverseString(str)
+    str.reverse
+    end
 
 # Solution 2 - Using a for loop
 #def reverseString(str)
@@ -56,9 +56,9 @@
 
 # Solution 8 - Using reduce
 
-def reverseString(str)
-    str.split("").reduce { |reversed, char| char + reversed }
-end
+#def reverseString(str)
+#    str.split("").reduce { |reversed, char| char + reversed }
+#end
 
 
 
