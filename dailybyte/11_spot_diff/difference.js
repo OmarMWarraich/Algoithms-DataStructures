@@ -15,18 +15,20 @@
  * 
  */
 
+
 function spot(s,t){
     var diff = ''
     var sSorted = s.split('').sort().join()
     var tSorted = t.split('').sort().join()
-    for (let i = 0; i < tSorted.length; i++){
+    for (let i of tSorted){
         var set = new Set(sSorted);
-        if (!set.has(tSorted[i])){
-            diff += tSorted[i]
+        if (!set.has(i)){
+            diff += i
         }
     } 
     return diff;
 }
+
 
 console.log(spot("foobar", "barfoot"))
 console.log(spot("ide", "idea"))
