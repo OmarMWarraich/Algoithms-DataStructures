@@ -1,4 +1,4 @@
-import Speller from "./speller";
+import Speller from "./speller.js";
 
 if (/complete|loaded|interactive/.test(document.readyState)) {
     init();
