@@ -74,6 +74,9 @@ class ListNode {
 }
 
 var addTwoNumbers = function (l1, l2) {
+
+
+
     const dummy = new ListNode();
     let carry = 0;
     let cur = dummy;
@@ -102,6 +105,20 @@ var addTwoNumbers = function (l1, l2) {
 }
 
 function addTwoNumbers(l1, l2) {
+
+    const arrayToLinkedList = (arr) => {
+        let dummy = new ListNode()
+        let cur = dummy.next
+        for (let val of arr) {
+            cur.next = new ListNode(val)
+            cur = cur.next
+        }
+        return dummy.next
+    }
+
+    l1 = arrayToLinkedList(l1)
+    l2 = arrayToLinkedList(l2)
+
     const dummy = new ListNode();
     let current = dummy;
     let carry = 0;

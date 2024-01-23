@@ -47,6 +47,15 @@
     return longest;
 } */
 
+// Solution: Two pointers and hash table
+
+/** 
+Define a hash table to record the characters in the current window. Let i and j represent the starting and ending index of the non repeating substring respectively. The length of the non repeating substring is recorded by ans.
+
+For each character s[j] in the string, we call it c. if c exists in the window s[i..j-1], we move it to the right until s[i..j] does not contain c. Then we add c to the hash table. At this time the window s[i..j] does not contain any repeated element and we update the maximum value of c. Finally we return ans.
+The time complexity is O(n) where n is the length of string.
+*/
+
 var lengthOfLongestSubstring = function (s) {
     // Initialize a set to keep track of unique characters in the current substring
     const ss = new Set();
